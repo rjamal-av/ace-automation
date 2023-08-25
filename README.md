@@ -1,4 +1,4 @@
-![ACE Automation Speciality](docs/images/ace-automation-banner.png)
+![ACE Automation Speciality](images/ace-automation-banner.png)
 
 ## Summary
 
@@ -33,7 +33,7 @@ This repository builds out the following infrastructure for the Aviatrix ACE Aut
 - Ubuntu VMs with password authentication (1 per spoke)
 - Aviatrix Network Segmentation (2 network domains)
 
-![Topology](docs/images/intro-topology.png)
+![Topology](images/topology.png)
 
 ### Software Requirements
 
