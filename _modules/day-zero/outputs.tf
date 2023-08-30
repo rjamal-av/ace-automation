@@ -7,7 +7,7 @@ output "bu1_bastion_private_ip" {
 }
 
 output "bu2_app_private_ip" {
-  value = module.aws_egress_ec2.private_ip
+  value = module.aws_app_ec2.private_ip
 }
 
 output "bu1_network_domain_name" {

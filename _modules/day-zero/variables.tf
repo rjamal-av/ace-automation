@@ -27,12 +27,12 @@ variable "aws_transit_name" {
 
 variable "aws_spoke_bastion_name" {
   description = "The aws bastion spoke name"
-  default     = "ace-automation-spoke-bastion"
+  default     = "ace-automation-bastion-spoke"
 }
 
-variable "aws_spoke_egress_name" {
-  description = "The aws egress spoke name"
-  default     = "ace-automation-spoke-egress"
+variable "aws_spoke_app_name" {
+  description = "The aws app spoke name"
+  default     = "ace-automation-app-spoke"
 }
 
 variable "aws_transit_cidr" {
@@ -45,8 +45,8 @@ variable "aws_spoke_bastion_cidr" {
   default     = "10.1.211.0/24"
 }
 
-variable "aws_spoke_egress_cidr" {
-  description = "The aws egress spoke vpc cidr"
+variable "aws_spoke_app_cidr" {
+  description = "The aws app spoke vpc cidr"
   default     = "10.1.212.0/24"
 }
 
