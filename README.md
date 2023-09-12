@@ -51,3 +51,7 @@ This repository builds out the following infrastructure for the Aviatrix ACE Aut
 - Sufficient AWS EIPs for region in scope.
 - A [GitHub](https://github.com) account.
 - A [Terraform Cloud](https://app.terraform.io) account.
+
+## Lab Guide
+
+[ACE Automation (IaC) Lab Guide](https://ace-automation.aviatrixlab.com)
