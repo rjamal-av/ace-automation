@@ -1,11 +1,11 @@
 terraform {
-  # backend "remote" {
-  #   hostname     = "app.terraform.io"
-  #   organization = "jb-smoker"
-  #   workspaces {
-  #     name = "ace-automation-day-zero"
-  #   }
-  # }
+  backend "remote" {
+    hostname = "app.terraform.io"
+    # organization = "<replace-with-your-Terraform-Cloud-organization-and-uncomment>"
+    workspaces {
+      name = "ace-automation"
+    }
+  }
   required_providers {
     aviatrix = {
       source  = "AviatrixSystems/aviatrix"

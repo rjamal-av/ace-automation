@@ -1,3 +1,4 @@
+# Details of the Aviatrix Controller instance
 data "aws_instance" "controller" {
   filter {
     name   = "tag:Name"
@@ -9,6 +10,7 @@ data "aws_instance" "controller" {
   }
 }
 
+# Details of the Aviatrix CoPilot instance
 data "aws_instance" "copilot" {
   filter {
     name   = "tag:Name"

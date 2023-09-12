@@ -6,6 +6,4 @@ provider "aviatrix" {
 
 provider "aws" {
   region = var.aws_region
-  # remove before push
-  profile = "build-hub"
 }

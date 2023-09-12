@@ -1,19 +1,9 @@
-locals {
-  allowed_http_domains = [
-    "*.ubuntu.com",
-  ]
-  allowed_https_domains = [
-    "aws.amazon.com",
-    "*.amazonaws.com",
-    "*.aviatrix.com",
-    "aviatrix.com",
-  ]
-}
-
+# Enable Distributed Cloud Firewall
 resource "aviatrix_distributed_firewalling_config" "ace_automation" {
   enable_distributed_firewalling = true
 }
 
+# WebGroup for allowed https domains
 resource "aviatrix_web_group" "allow_internet_https" {
   name = "allowed-internet-https"
   selector {
@@ -27,6 +17,7 @@ resource "aviatrix_web_group" "allow_internet_https" {
   }
 }
 
+# WebGroup for allowed http domains
 resource "aviatrix_web_group" "allow_internet_http" {
   name = "allowed-internet-http"
   selector {
@@ -40,6 +31,7 @@ resource "aviatrix_web_group" "allow_internet_http" {
   }
 }
 
+# Rfc1918 SmartGroup
 resource "aviatrix_smart_group" "rfc1918" {
   name = "rfc1918"
   selector {
@@ -55,6 +47,7 @@ resource "aviatrix_smart_group" "rfc1918" {
   }
 }
 
+# Distributed Cloud Firewall rules
 resource "aviatrix_distributed_firewalling_policy_list" "ace_automation" {
   policies {
     name     = "allow-internet-http"

@@ -1,10 +1,10 @@
 terraform {
-  #   backend "remote" {
-  #     # organization = "<replace-with-your-Terraform-Cloud-organization-and-uncomment>"
-  #     workspaces {
-  #       name = "ace-iac-day-two"
-  #     }
-  #   }
+  backend "remote" {
+    # organization = "<replace-with-your-Terraform-Cloud-organization-and-uncomment>"
+    workspaces {
+      name = "ace-automation-day-two"
+    }
+  }
   required_providers {
     aviatrix = {
       source  = "AviatrixSystems/aviatrix"
