@@ -13,5 +13,5 @@ variable "aws_account_name" {
 
 variable "aws_region" {
   description = "The aws region used for all resources"
-  default     = "us-west-2"
+  default     = "us-east-1"
 }
