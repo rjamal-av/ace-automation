@@ -1,7 +1,7 @@
 module "ace_automation" {
   source                    = "./_modules/day-zero"
   aws_account_name          = var.aws_account_name
-  aws_transit_instance_size = "t3.micro"
+  aws_transit_instance_size = "t3.small"
   password                  = var.password
   aws_region                = var.aws_region
 }
