@@ -4,6 +4,7 @@ variable "password" {
 
 variable "controller_ip" {
   description = "The Aviatrix controller eip"
+  default     = "44.218.152.223"
 }
 
 variable "aws_account_name" {
