@@ -11,6 +11,7 @@ module "aws_transit" {
   cidr                = var.aws_transit_cidr
   instance_size       = var.aws_transit_instance_size
   enable_segmentation = true
+  single_az_ha        = false
   ha_gw               = false
 }
 
@@ -27,6 +28,7 @@ module "aws_spoke_bastion" {
   instance_size  = var.aws_spoke_instance_size
   network_domain = aviatrix_segmentation_network_domain.bu1.domain_name
   transit_gw     = module.aws_transit.transit_gateway.gw_name
+  single_az_ha   = false
   ha_gw          = false
 }
 
@@ -43,6 +45,7 @@ module "aws_spoke_app" {
   instance_size  = var.aws_spoke_instance_size
   network_domain = aviatrix_segmentation_network_domain.bu2.domain_name
   transit_gw     = module.aws_transit.transit_gateway.gw_name
+  single_az_ha   = false
   ha_gw          = false
   single_ip_snat = true
 }
