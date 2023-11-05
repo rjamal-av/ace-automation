@@ -1,6 +1,6 @@
 terraform {
   backend "remote" {
-    organization = "<replace-with-your-Terraform-Cloud-organization-and-uncomment>"
+    organization = SLST-Aviatrix
     workspaces {
       name = "ace-automation-day-two"
     }
