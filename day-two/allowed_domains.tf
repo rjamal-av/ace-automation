@@ -6,7 +6,6 @@ locals {
     "aws.amazon.com",
     "*.amazonaws.com",
     "*.aviatrix.com",
-    "aviatrix.com",
-    "api.openai.com",
+    "google.com",
   ]
 }
