@@ -1,6 +1,6 @@
 terraform {
   backend "remote" {
-    organization = SLST-Aviatrix
+    organization = "SLST-Aviatrix"
     workspaces {
       name = "ace-automation-day-two"
     }
